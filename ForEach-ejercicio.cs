@@ -6,10 +6,11 @@ namespace MyPersonalApp
     {
     static void Main (string [] args)
         {
-            for (int i = 0; i < 10; i++)
+            int[] numeros = { 1, 2, 3, 4, 5 };
+            foreach (int n in numeros)
             {
-                Console.WriteLine($"Iterador {i}");
+                Console.WriteLine("Número: " + n);
             }
         }
-    }
+    }   
 }

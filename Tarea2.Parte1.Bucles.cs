@@ -1,27 +1,25 @@
 using System;
 
-namespace MyPersonalApp;
-class Program
+namespace MyPersonalApp
 {
-      static void Main()
+    internal class Program
     {
-        for (int i = 1; i <= 50; i++)
+        static void Main (string [] args)
         {
-            if (i == 25)
+            for (int i = 1; i < 50; i++)
             {
-                break; 
+                if (i == 25)
+                {
+                    Console.WriteLine("Llegamos a 25");
+                    break;
+                }
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine("Saltando número multiplo de 5");
+                    continue;
+                }
+                Console.WriteLine($"Número: {i}");
             }
-             Console.WriteLine(i);
-        }
-
-        for (int i = 26; i <= 50; i++)
-        {
-            if (i % 5 == 0)
-            {
-                continue; 
-            }
-
-            Console.WriteLine(i);
         }
     }
 }
